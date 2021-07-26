@@ -4,6 +4,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: arial, sans-serif;
 }
@@ -35,6 +39,10 @@ footer {
 
 #tile_icon {
     grid-column: 6/7;
+}
+
+#tile_icon:hover {
+    opacity: 1;
 }
 
 #sign-in {
@@ -74,31 +82,40 @@ footer {
     width: 482px;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
-    background: url(images/search_icon.png) no-repeat scroll 7px 10px;
-    padding-left: 35px;
+    padding-left: 40px;
+    background-color: transparent;
+}
+
+#search-icon {
+    position: absolute;
+    bottom: 84px;
+    right: 380px;
+    opacity: 0.3;
+    height: 27%;
 }
 
 .buttons {
     display: flex;
     padding-top: 40px;
-    font-size: 13px;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
-#google-search {
+.search-buttons {
     background-color: #f2f2f2;
+    font-size: 15px;
     color: #5F6368;
     width: 140px;
     height: 40px;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
-#feeling-lucky {
-    background-color: #f2f2f2;
-    color: #5F6368;
-    width: 140px;
-    height: 40px;
+.search-buttons:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+    color: #000;
 }
 
 .search-form {
@@ -135,7 +152,7 @@ footer {
     display: grid;
     padding-left: 15px;
     padding-right: 30px;
-    font-size: 15px;
+    font-size: 14px;
     height: 40px;
     width: 100%;
     background-color:#f2f2f2;
@@ -143,6 +160,7 @@ footer {
     grid-template-columns: repeat(2, 90px) 150px 1280px repeat(3, 70px);
     align-items: center;
     justify-items: center;
+    opacity: 0.75;
 }
 
 
