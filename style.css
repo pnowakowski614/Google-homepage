@@ -5,10 +5,45 @@ body {
 footer {
     position: fixed;
     bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color:rgb(228, 228, 228);
 }
+
+#about {
+    grid-column: 1/2;
+}
+
+#store {
+    grid-column: 2/3;
+}
+
+#gmail {
+    grid-column: 4/5;
+}
+
+#images {
+    grid-column: 5/6;
+}
+
+#tile_icon {
+    grid-column: 6/7;
+}
+
+#sign-in {
+    grid-column: 7/8;
+}
+
+.topnav {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 15px; 
+    grid-template-columns: repeat(2, 50px) 1fr repeat(4, 50px);
+    align-items: center;
+    justify-items: center;
+    font-size: 13px;
+    top: 16px;
+    opacity: 0.75;
+}
+
 
 .search-form {
     position: fixed;
@@ -16,42 +51,43 @@ footer {
     left: 800px;
 }
 
-.topnav {
-    font-size: 13px;
-    position: relative;
-    top: 16px;
 
+#advertising {
+    grid-column: 1/2;
 }
 
-.topnav-left {
-    display: inline-block;
+#business {
+    grid-column: 2/3;
+}
+
+#how-search {
+    grid-column: 3/4;
+}
+
+#privacy {
+    grid-column: 5/6;
+}
+
+#terms {
+    grid-column: 6/7;
+}
+
+#settings {
+    grid-column: 7/8;
+}
+
+.bottomnav {
+    display: grid;
     padding-left: 15px;
-    color: #000;
-    opacity: 0.75;
-  }
-
-.topnav-right {
-    display: inline-block;
-    position:relative;
-    left: 1500px;
-    color: #000;
-    opacity: 0.75;
-  }
-
-.bottomnav-left {
-    display: inline-block;
-    position: fixed;
-    color: #000;
-    opacity: 0.75;
-  }
-
-.bottomnav-right {
-    display: inline-block;
-    position:fixed;
-    left: 1600px;
-    color: #000;
-    opacity: 0.75;
-  }
+    padding-right: 30px;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    background-color:rgb(228, 228, 228);
+    grid-template-columns: repeat(2, 90px) 150px 1280px repeat(3, 70px);
+    align-items: center;
+    justify-items: center;
+}
 
 #google_logo {
     position: fixed;
