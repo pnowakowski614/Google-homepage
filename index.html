@@ -6,29 +6,37 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a href="#">About</a>
-                <a href="#">Store</a>
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-                <a href="#">tile icon</a>
-                <a href="#"><input value="Sign In" type="button" id="sign-in" name="sign-in"></a>
+            <nav class="topnav">
+                    <div class="topnav-left">
+                        <a href="#">About</a>
+                        <a href="#">Store</a>
+                    </div>
+                    <div class="topnav-right">
+                        <a href="#">Gmail</a>
+                        <a href="#">Images</a>
+                        <a href="#"><img alt="Tile Icon" src="images/tile_icon.png"></a>
+                        <a href="#"><input value="Sign In" type="button" id="sign-in" name="sign-in"></a>
+                    </div>
             </nav>
         </header>  
-        <img alt="Google Logo" src="images/google_icon.png">
-        <form>
+        <img id="google_logo" alt="Google Logo" src="images/google_icon.png">
+        <form class="search-form">
             <input type="text" id="search-bar" name="search-bar">
             <input value="Google Search" type="submit" id="google-search" name="google-search">
             <input value="I'm Feeling Lucky" type="submit" id="feeling-lucky" name="feeling-lucky">
         </form>
         <footer>
-            <nav>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search works</a>
-                <a href="#">Images</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
+            <nav class="bottomnav">
+                <div class="bottomnav-left">
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">How Search works</a>
+                </div>
+                <div class="bottomnav-right">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </div>
             </nav>
         </footer>
     </body>
